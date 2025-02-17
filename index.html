@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Statement</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kiran Top Up Centre</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Kiran Top Up Centre</h1>
+
+        <div class="input-box">
+
+            <label>Transaction ID:</label>
+
+            <input type="text" id="transactionId" placeholder="Enter Transaction ID">
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Total Amount:</label>
+
+            <input type="text" id="amount" placeholder="Enter Amount (e.g. 2,530 or Free Offer)">
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Game Name:</label>
+
+            <input type="text" id="game" placeholder="Enter Game Name">
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Payment Method:</label>
+
+            <input type="text" id="paymentMethod" placeholder="Enter Payment Method">
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Transaction Time:</label>
+
+            <input type="text" id="transactionTime" placeholder="Enter Date & Time">
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Extra Note (Optional):</label>
+
+            <input type="text" id="extraText" placeholder="Write something...">
+
+        </div>
+
+        <button onclick="generateStatement()">Generate Statement</button>
+
+        <div id="statement" class="statement">
+
+            <h2>✅ Payment Completed!</h2>
+
+            <p><strong>Transaction ID:</strong> <span id="sTransactionId"></span></p>
+
+            <p><strong>Total Amount:</strong> <span id="sAmount"></span></p>
+
+            <p><strong>Game:</strong> <span id="sGame"></span></p>
+
+            <p><strong>Payment Method:</strong> <span id="sPaymentMethod"></span></p>
+
+            <p><strong>Transaction Time:</strong> <span id="sTransactionTime"></span></p>
+
+            <p id="sExtraText" class="extra-text"></p>
+
+            <div class="watermark">© Copyright Kiran Official</div>
+
+        </div>
+
+        <button onclick="downloadImage()">Download Statement (JPG)</button>
+
+    </div>
+
+    <script src="html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
